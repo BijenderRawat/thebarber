@@ -1,0 +1,41 @@
+.main_div{
+	width: 100%;
+  	margin-top: 90px; 
+  	height: 566px;
+  	display: flex;
+  	table-layout: fixed;
+  	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  	z-index: 10;
+}
+
+.map_div{
+	width: 50%;
+	height: 100%;
+	background-color: black;
+}
+
+.right_main_div{
+	width: 50%;
+	height: 100%;
+	display: flex;
+}
+
+.shop_list{
+	width: 50%;
+}
+
+.shop_list_navbar{
+	display: flex;
+	table-layout: auto;
+	top: 0;
+	height: 10%;
+}
+
+.shop_list_control{
+	width: 60%;
+	border: none;
+}
+
+.shop_info{
+	width: 50%;
+}
