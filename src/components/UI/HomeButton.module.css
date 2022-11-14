@@ -1,0 +1,12 @@
+a{
+  font: inherit;
+  border: none;
+  background-color: #352929;
+  border-radius: 25px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

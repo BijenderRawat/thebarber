@@ -1,10 +1,23 @@
 import classes from './Instruction.module.css'
+import {NavLink} from 'react-router-dom'
+import HomeButton from '../components/UI/HomeButton'
 
 const Instruction = () => {
 	return(
-		<>
-		<h1 className={classes.main}>This is me</h1>
-		</>
+		<div classsName={classes.main_div}>
+
+		<HomeButton />
+
+		<main classsName={classes.instruction}>
+		
+		<ol>
+		<li></li>
+		</ol>
+		</main>
+
+		<NavLink to="" activeClassName={classes.active}>Next</NavLink>
+		
+		</div>
 		);
 }
 
