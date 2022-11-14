@@ -1,6 +1,9 @@
 import classes from './Navbar.module.css'
+import Instruction from '../jointhecommunity/Instruction'
+import {NavLink} from 'react-router-dom'
 
 const Navbar = () => {
+
 	return (
 		<div className={classes.main_div}>
 
@@ -9,7 +12,7 @@ const Navbar = () => {
 		</div>
 
 		<div className={classes.button_area}>
-		<button type="button">Join thebarber community</button>
+		<NavLink to="./jointhecommunity" activeClassName={classes.active}>Join thebarber community</NavLink>
 		</div>
 
 		</div>

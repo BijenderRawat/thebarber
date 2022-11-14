@@ -28,23 +28,24 @@
   margin-right: 5%;
   width: 30%;
   height: 60%;
-  display: flex;
-  justify-content: center;
 }
 
-.button_area button{
-  cursor: pointer;
+.button_area a{
   font: inherit;
   border: none;
   background-color: #352929;
-  color: white;
   height: 100%;
   width: 80%;
   border-radius: 25px;
   font-weight: bold;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.button_area button:hover{
+.button_area a:hover{
   background-color: ghostwhite;
   color: black;
 }
