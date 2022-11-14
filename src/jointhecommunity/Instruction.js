@@ -3,7 +3,7 @@ import classes from './Instruction.module.css'
 const Instruction = () => {
 	return(
 		<>
-		<h1>This is me</h1>
+		<h1 className={classes.main}>This is me</h1>
 		</>
 		);
 }
