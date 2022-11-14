@@ -1,5 +1,4 @@
 import classes from './Navbar.module.css'
-import Instruction from '../jointhecommunity/Instruction'
 import {NavLink} from 'react-router-dom'
 
 const Navbar = () => {
