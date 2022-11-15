@@ -3,10 +3,12 @@ a{
   border: none;
   background-color: #352929;
   border-radius: 25px;
-  font-weight: bold;
+  font-weights: bold;
   color: white;
-  text-decoration: none;
+  width: 10%;
+  height: 30px;
   display: flex;
+  text-decoration: none;
   align-items: center;
   justify-content: center;
 }
