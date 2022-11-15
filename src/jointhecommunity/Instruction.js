@@ -12,8 +12,9 @@ const Instruction = () => {
 
 		<div className={classes.instruction_div}>
 		<ul>
-		<li>Hello</li>
-		<li>Hi</li>
+		<li>This is the first line</li>
+		<li>This is the second line</li>
+		<li>So on..........</li>
 		</ul>
 		</div>
 		

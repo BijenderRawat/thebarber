@@ -2,7 +2,6 @@
 	top: 0;
 	position: fixed;
 	width: 100%;	
-	background-color: grey;
 }
 
 .home_div{
@@ -10,14 +9,14 @@
 	padding: 1%;
 	display: flex;
 	justify-content: center;
-	background-color: black;
 }
 
 .instruction_div{
 	width: 100%;
 	height: fit-content;
 	display: flex;
-	background-color: red;
+	background-color: grey;
+	justify-content: center;
 }
 
 .next_div{
@@ -25,5 +24,4 @@
 	padding: 1%;
 	display: flex;
 	justify-content: center;
-	background-color: blue;
 }
