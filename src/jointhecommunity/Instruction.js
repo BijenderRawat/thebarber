@@ -19,7 +19,7 @@ const Instruction = () => {
 		</div>
 		
 		<div className={classes.next_div}>
-		<NavLink to="" activeClassName={classes.active}>Next</NavLink>
+		<NavLink to="/jointhecommunity/next" activeClassName={classes.active}>Next</NavLink>
 		</div>
 		
 		</div>

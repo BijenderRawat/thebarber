@@ -6,6 +6,7 @@ import Navbar from './components/Navbar'
 import Content from './components/Content'
 import Footer from './components/Footer'
 import Instruction from './jointhecommunity/Instruction'
+import Authentication from './components/Authentication/Authentication'
 
 function App() {
 
@@ -20,6 +21,10 @@ function App() {
 
     <Route path='/jointhecommunity' exact>
     <Instruction />
+    </Route>
+
+    <Route path='/jointhecommunity/authentication' exact>
+    <Authentication />
     </Route>
 
     </>

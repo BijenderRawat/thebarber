@@ -11,7 +11,7 @@ const Navbar = () => {
 		</div>
 
 		<div className={classes.button_area}>
-		<NavLink to="/jointhecommunity" activeClassName={classes.active}>Join thebarber community</NavLink>
+		<NavLink to="/jointhecommunity/authentication" activeClassName={classes.active}>Join thebarber community</NavLink>
 		</div>
 
 		</div>
