@@ -1,11 +1,14 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useContext } from 'react';
 
 import classes from './AuthenticationForm.module.css';
+import AuthContext from '../../Context/auth-context'
 
 const AuthenticationForm = () => {
 
   const emailInputRef = useRef();
   const passwordInputRef = useRef();
+
+  const authCtx = useContext(AuthContext);
 
   const [isLogin, setIsLogin] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
@@ -41,7 +44,7 @@ const AuthenticationForm = () => {
       setIsLoading(false);
       if(res.ok){
         return res.json().then(data => {
-          console.log(data);
+          authCtx.login(data.idToken);
         });
       }else{
         return res.json().then(data => {
