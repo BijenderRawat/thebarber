@@ -1,7 +1,7 @@
 import { useState, useRef, useContext } from 'react';
 
 import classes from './AuthenticationForm.module.css';
-import AuthContext from '../../Context/auth-context'
+import AuthContext from '../../context/auth-context'
 
 const AuthenticationForm = () => {
 
