@@ -3,15 +3,12 @@ import './App.css';
 import {useContext} from 'react'
 import {Route, Redirect} from 'react-router-dom'
 
-import Navbar from './components/Navbar'
-import Content from './components/Content'
-import Footer from './components/Footer'
 import Instruction from './jointhecommunity/Instruction'
 import Authentication from './components/Authentication/Authentication'
 
 import BarberProfile from './components/BarberProfile/BarberProfile'
-
 import AuthContext from './context/auth-context'
+import MainPage from './components/MainPage'
 
 function App() {
 
@@ -19,11 +16,9 @@ function App() {
 
   return (
     <>
-
+    
     <Route path='/' exact>
-    <Navbar />
-    <Content />
-    <Footer />
+    <MainPage />
     </Route>
 
     <Route path='/jointhecommunity' exact>
