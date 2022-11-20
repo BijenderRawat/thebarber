@@ -1,10 +1,10 @@
 import AuthenticationForm from './AuthenticationForm'
-import Navigation from '../../jointhecommunity/Navigation'
+import AuthenticationNavbar from './AuthenticationNavbar'
 
 const Authentication = () => {
 	return (
 		<>
-		<Navigation />
+		<AuthenticationNavbar />
 		<AuthenticationForm />
 		</>
 		);

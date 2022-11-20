@@ -1,11 +1,11 @@
 import classes from './BarberProfile.module.css'
-import Navigation from '../../jointhecommunity/Navigation'
+import Navbar from '../Navbar'
 import BarberProfileContent from './BarberProfileContent'
 
 const BarberProfile = () => {
 	return (
 		<section className={classes.profile}>
-		<Navigation />
+		<Navbar />
 		<BarberProfileContent />
 		</section>
 		);

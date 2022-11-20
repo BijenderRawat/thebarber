@@ -1,5 +1,5 @@
-import { useState, useRef, useContext } from 'react';
-
+import {useState, useRef, useContext} from 'react';
+import {Redirect} from 'react-router-dom'
 import classes from './AuthenticationForm.module.css';
 import AuthContext from '../../context/auth-context'
 
