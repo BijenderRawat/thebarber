@@ -1,13 +1,12 @@
-import classes from './BarberProfile.module.css'
-import Navbar from '../Navbar'
+import BarberProfileNavbar from './BarberProfileNavbar'
 import BarberProfileContent from './BarberProfileContent'
 
 const BarberProfile = () => {
 	return (
-		<section className={classes.profile}>
-		<Navbar />
+		<>
+		<BarberProfileNavbar />
 		<BarberProfileContent />
-		</section>
+		</>
 		);
 }
 

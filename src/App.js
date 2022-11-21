@@ -1,5 +1,5 @@
 import './App.css';
-import {Route, Redirect} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 
 import Authentication from './components/Authentication/Authentication'
 
@@ -21,10 +21,6 @@ function App() {
 
     <Route path='/jointhecommunity/profile' exact>
     <BarberProfile />
-    </Route>
-
-    <Route path='*'>
-    <Redirect to='/' />
     </Route>
     
     </>
