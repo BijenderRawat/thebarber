@@ -17,8 +17,29 @@
 }
 
 .rating_area{
-  background-color: green;
+  background-color: grey;
   margin-left: 5%;
-  width: 30%;
-  height: 60%;
+  width: 20%;
+  height: 90%;
+}
+
+.barber_div, .shop_div{
+  height: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating_category_name{
+  width: 40%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.rating_category_name:hover{
+  font-size: 120%;
+  color: red;
+}
+
+.rating_category_rating{
 }

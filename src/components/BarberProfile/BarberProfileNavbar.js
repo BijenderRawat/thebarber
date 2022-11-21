@@ -17,6 +17,23 @@ const BarberProfileNavbar = () => {
 		</div>
 
 		<div className={classes.rating_area}>
+
+		<div className={classes.barber_div}>	
+		
+		<section className={classes.rating_category_name}>Your Rating</section>
+		<section className={classes.rating_category_rating}>
+		</section>
+		
+		</div>
+
+		<div className={classes.shop_div}>
+		
+		<section className={classes.rating_category_name}>Shop Rating</section>
+		<section className={classes.rating_category_rating}>
+		</section>
+		
+		</div>
+
 		</div>
 
 		</div>
