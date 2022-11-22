@@ -1,5 +1,6 @@
 import classes from './BarberProfileContent.module.css'
 import {NavLink} from 'react-router-dom'
+import Footer from '../Footer'
 
 const BarberPrfileContent = () => {
   return (
@@ -24,6 +25,14 @@ const BarberPrfileContent = () => {
     <div className={classes.sub_div_2}>
     
     <div className={classes.payment_info}>
+    <NavLink to='/jointhecommunity/profile/payments' activeClassName={classes.active}>Payments</NavLink>
+    </div>
+
+    <div className={classes.other_info}>
+    <NavLink to='/jointhecommunity/profile/payments' activeClassName={classes.active}>Payments</NavLink>
+    </div>
+
+    <div className={classes.other_info_2}>
     <NavLink to='/jointhecommunity/profile/payments' activeClassName={classes.active}>Payments</NavLink>
     </div>
 

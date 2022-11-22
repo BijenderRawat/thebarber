@@ -1,43 +1,32 @@
 .main_div{
 	margin: 2% 10% 0% 10%;
+	background-color: #352929;
 }
 
-.sub_div_1{
+.sub_div_1, .sub_div_2{
 	display: flex;
 	justify-content: space-around;
-	background-color: green;
-}
-
-.sub_div_2{
-	display: flex;
-	justify-content: space-around;
-	background-color: blue;
 }
 
 .sub_div_1 div, .sub_div_2 div{
-	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-top: 4%;
+	margin-bottom: 4%;
 }
 
-.security_info, .personal_info, .shop_info, .payment_info{
-	background-color: red;
-	padding: 5% 10% 5% 10%;
-}
-
-.security_info{
-	margin-left: 0px;
-	padding-left: 0px;
+.security_info, .personal_info, .shop_info, .payment_info, .other_info, .other_info_2{
+	padding: 2% 10% 2% 10%;
+	display: flex;
+	justify-content: center;	
 }
 
 a{
 	text-decoration: none;
 	color: white;
-	background-color: black;
 	border-radius: 25px;
 	padding: 100%;
-  	width: 100%;
-  	margin-left: 0px;
-  	border-left: 0px;
-/*  	padding-left: 0px;*/
   	border-radius: 25px;
+}
+
+a:hover{
+	background-color: red;
 }

@@ -6,8 +6,8 @@ const MainPage = () => {
 	return (
 		<>
 		<Navbar />
-    	<Content />
-    	<Footer />
+		<Content />
+		<Footer />
 		</>
 		);
 }

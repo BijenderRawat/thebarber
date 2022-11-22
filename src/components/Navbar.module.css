@@ -15,7 +15,7 @@
   margin-left: 5%;
 }
 
-.div_logo h1{
+.div_logo h1 {
   align-items: center;
   margin: 4% 10px 4% 10px;
   color: black;
@@ -23,33 +23,14 @@
   font-family: italic;
 }
 
-.div_logo a{
-  font: inherit;
-  border: none;
-  background-color: #352929;
-  height: 100%;
-  width: 80%;
-  border-radius: 25px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-}
-
-.div_logo a:hover{
-  background-color: ghostwhite;
-  color: black;
-}
-
-.button_area{
+.button_area {
   margin-right: 5%;
+  background-color: green;
   width: 30%;
   height: 60%;
 }
 
-.button_area a{
+.button_area a {
   font: inherit;
   border: none;
   background-color: #352929;
@@ -65,7 +46,7 @@
   justify-content: center;
 }
 
-.button_area a:hover{
+.button_area a:hover {
   background-color: ghostwhite;
   color: black;
 }
