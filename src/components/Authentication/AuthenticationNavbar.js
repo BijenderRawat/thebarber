@@ -1,15 +1,18 @@
 import classes from './AuthenticationNavbar.module.css'
 
-import {NavLink} from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 const AuthenticationNavbar = () => {
+
+	const navigate = useNavigate();
+	const navigateToHomeHandler = () => {
+		navigate('/');
+	}
 
 	return (
 		<div className={classes.main_div}>
 
-		<div className={classes.button_area}>
-		<NavLink to='/' activeClassName={classes.active}>Welcome to thebarber community</NavLink>
-		</div>
+		<button onClick={navigateToHomeHandler}>Welcome to thebarber community</button>
 
 		</div>
 		);

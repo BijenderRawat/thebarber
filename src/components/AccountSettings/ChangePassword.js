@@ -1,15 +1,13 @@
-import {useRef, useContext} from 'react'
+import {useRef} from 'react'
 
 import {useHistory} from 'react-router-dom'
 import classes from './ChangePassword.module.css';
-import AuthContext from '../context/auth-context'
 
 const ChangePassword = () => {
 
   const history = useHistory();
 
   const newPasswordRef = useRef();
-  const authCtx = useContext(AuthContext);
 
   const submitHandler = event => {
     event.preventDefault();
@@ -24,7 +22,7 @@ const ChangePassword = () => {
         // added inside the header.
 
         // So basically it depends on the API that you are using.
-        idToken: authCtx.token,
+        // idToken: authCtx.token,
         password: enteredNewPassword,
         returnSecureToken: false
       }),

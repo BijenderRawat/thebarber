@@ -1,11 +1,9 @@
+import { NavLink } from 'react-router-dom'
 import classes from './BarberProfileContent.module.css'
-import {NavLink} from 'react-router-dom'
-import Footer from '../Footer'
 
 const BarberPrfileContent = () => {
-  return (
-    <div className={classes.main_div}>
-
+  return <div className={classes.main_div}>
+  
     <div className={classes.sub_div_1}>
 
     <div className={classes.security_info}>
@@ -38,8 +36,7 @@ const BarberPrfileContent = () => {
 
     </div>
     
-    </div>
-    );
+    </div>;
 }
 
 export default BarberPrfileContent;

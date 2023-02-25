@@ -3,7 +3,7 @@ import {NavLink} from 'react-router-dom'
 
 const HomeButton = () => {
 	return(
-		<NavLink to="/" activeClassName={classes.active}>Home</NavLink>
+		<NavLink to='/' activeClassName={classes.active}>Home</NavLink>
 		);
 }
 

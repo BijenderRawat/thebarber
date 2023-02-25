@@ -1,17 +1,19 @@
+import { Outlet } from 'react-router-dom'
+
 import classes from './Content.module.css'
-import Button from './UI/Button'
-import Sort from './UI/Sort'
+import Button from '../../UI/Button'
+import Sort from '../../UI/Sort'
 
 const Content = () => {
 
-	const clickHandler = () => {
-
-	}
+	const clickHandler = () => {}
 	return (
+		<>
+
 		<div className={classes.main_div}>
 
 		<div className={classes.map_div}>
-		<h1 style={{color:"white"}}>This is temporary space for map API</h1>
+		<h1 style={{color:'white'}}>This is temporary space for map API</h1>
 		</div>
 
 		<div className={classes.right_main_div}>
@@ -35,6 +37,10 @@ const Content = () => {
 		</div>
 
 		</div>
+
+		<Outlet />
+
+		</>
 		);
 }
 

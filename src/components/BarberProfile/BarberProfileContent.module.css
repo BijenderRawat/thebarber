@@ -6,6 +6,7 @@
 .sub_div_1, .sub_div_2{
 	display: flex;
 	justify-content: space-around;
+	background-color: red;
 }
 
 .sub_div_1 div, .sub_div_2 div{
@@ -28,5 +29,5 @@ a{
 }
 
 a:hover{
-	background-color: red;
+/*	background-color: red;*/
 }

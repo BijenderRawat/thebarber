@@ -1,0 +1,27 @@
+.main_div {
+  height: 90px;
+  background-color: ghostwhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div_logo {
+  margin-left: 5%;
+}
+
+.div_logo h1 {
+  margin: 4% 10px 4% 10px;
+  color: black;
+  font-weight: bold;
+  font-family: italic;
+}
+
+.main_div a,
+.main_div a:hover{
+  margin-right: 5%;
+  padding: 1% 5%;
+  color: black;
+  background-color: grey;
+  text-decoration: none;
+}

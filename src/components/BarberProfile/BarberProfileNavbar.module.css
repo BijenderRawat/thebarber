@@ -1,24 +1,18 @@
 .main_div {
-  top: 0;
-  left: 0;
   width: 100%;
   height: 90px;
   background-color: ghostwhite;
   display: flex;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  z-index: 10;
+  justify-content: space-between;
 }
 
 .div_logo {
-  background-color: grey;
-  margin-left: 5%;
   display: flex;
+  gap: 2px;
 }
 
 .rating_area{
-  background-color: grey;
-  margin-left: 5%;
   width: 20%;
   height: 90%;
 }
@@ -42,4 +36,22 @@
 }
 
 .rating_category_rating{
+}
+
+.logout_area{
+  margin-right: 5%;
+  height: 40%;
+  width: 10%;
+}
+
+.logout_area button{
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  border-radius: 20px;
+  border: none;
+}
+
+.logout_area button:hover{
+  cursor: pointer;
 }
