@@ -1,4 +1,4 @@
-.main_div {
+.profile_main_div {
   width: 100%;
   height: 90px;
   background-color: ghostwhite;
@@ -33,9 +33,33 @@
 .rating_category_name:hover{
   font-size: 120%;
   color: red;
+  cursor: pointer;
 }
 
 .rating_category_rating{
+}
+
+.shopstatus_area{
+  height: 40%;
+  width: 10%;
+}
+
+.shopstatus_area button{
+  width: 100%;
+  height: 100%;
+  color: white;
+  cursor: pointer;
+  background-color: grey;
+  border-radius: 20px;
+  border: none;
+}
+
+.shopstatus_area_green button{
+  background-color: green;
+}
+
+.shopstatus_area_black button{
+  background-color: black;
 }
 
 .logout_area{
@@ -47,11 +71,9 @@
 .logout_area button{
   width: 100%;
   height: 100%;
+  color: white;
+  cursor: pointer;
   background-color: grey;
   border-radius: 20px;
   border: none;
-}
-
-.logout_area button:hover{
-  cursor: pointer;
 }

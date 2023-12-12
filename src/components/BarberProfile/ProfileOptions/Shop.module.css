@@ -1,0 +1,23 @@
+.main_shop_list{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main_shop_list li{
+	display: flex;
+	text-align: center;
+}
+
+.shopname,
+.shopname:hover,
+.shoplocation,
+.shoplocation:hover{
+	color: white;
+	background-color: red;
+	padding: 100px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-decoration: none;
+}

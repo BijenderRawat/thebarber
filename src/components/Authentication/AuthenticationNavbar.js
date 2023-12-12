@@ -1,21 +1,9 @@
-import classes from './AuthenticationNavbar.module.css'
-
-import { useNavigate } from 'react-router-dom'
-
+import { useNavigate } from 'react-router-dom';
+import classes from './AuthenticationNavbar.module.css';
 const AuthenticationNavbar = () => {
-
 	const navigate = useNavigate();
-	const navigateToHomeHandler = () => {
-		navigate('/');
-	}
-
-	return (
-		<div className={classes.main_div}>
-
-		<button onClick={navigateToHomeHandler}>Welcome to thebarber community</button>
-
-		</div>
-		);
+	return <div className={classes.main_div}>
+		<button onClick={() => { navigate('/'); }}>Welcome to thebarber community</button>
+	</div>;
 }
-
 export default AuthenticationNavbar;

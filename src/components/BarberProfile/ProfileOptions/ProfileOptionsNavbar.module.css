@@ -1,0 +1,15 @@
+.profileoption_main_div {
+  width: 100%;
+  height: 90px;
+  background-color: #38015c;
+  display: flex;
+  align-items: center;
+}
+
+.profileoption_main_div a{
+  color: white;
+  font-weight: bold;
+  padding: 0px;
+  margin-left: 49%;
+  text-decoration: none;
+}

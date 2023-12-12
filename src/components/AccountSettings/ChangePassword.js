@@ -1,52 +1,40 @@
-import {useRef} from 'react'
+import { json, redirect } from 'react-router-dom';
 
-import {useHistory} from 'react-router-dom'
-import classes from './ChangePassword.module.css';
+import { ChangePasswordURL } from '../../Loader/urlLoader';
+import ChangePasswordForm from './ChangePasswordForm';
 
 const ChangePassword = () => {
-
-  const history = useHistory();
-
-  const newPasswordRef = useRef();
-
-  const submitHandler = event => {
-    event.preventDefault();
-    const enteredNewPassword = newPasswordRef.current.value;
-    // ..validation
-
-    fetch('https://identitytoolkit.googleapis.com/v1/accounts:update?key=AIzaSyAjmebQnJBsD1Gv093hWUcmoNuKlJn6A9I', {
-      method: 'POST',
-      body: JSON.stringify({
-        // here the token is used inside the body. but for some other end point, may be you have to add it in the
-        // query parameter .i.e. inside and at the end of URL. And maybe in some other end point, it needs to be 
-        // added inside the header.
-
-        // So basically it depends on the API that you are using.
-        // idToken: authCtx.token,
-        password: enteredNewPassword,
-        returnSecureToken: false
-      }),
-      header: {
-        'Content-Type': 'application/json'
-      }
-    }).then(err => {
-      // assumption is that it always succeed
-      alert("Password Changed");
-      history.replace('/');
-    });
-  }
-
-  return (
-    <form className={classes.form} onSubmit={submitHandler}>
-      <div className={classes.control}>
-        <label htmlFor='new-password'>New Password</label>
-        <input type='password' id='new-password' minlength="7" ref={newPasswordRef} />
-      </div>
-      <div className={classes.action}>
-        <button>Change Password</button>
-      </div>
-    </form>
-  );
+  return <ChangePasswordForm />;
 }
 
 export default ChangePassword;
+
+export const action = async ({ request }) => {
+  const formdata = await request.formData();
+  const data = {
+    idToken: localStorage.getItem('token'),
+    password: formdata.get('new-password'),
+    returnSecureToken: true
+  }
+
+  const response = await fetch(ChangePasswordURL, {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  });
+
+  if (!response.ok) {
+    throw json({ message: 'Password Cannot be changed' }, { status: 500 });
+  }
+
+  const resData = await response.json();
+  const newtoken = resData.idToken;
+  const expiresIn = resData.expiresIn;
+  localStorage.setItem('token', newtoken);
+  const expiration = new Date();
+  expiration.setHours(expiration.getHours() + expiresIn);
+  localStorage.setItem('expiration', expiration.toISOString());
+  return redirect('/jointhecommunity/profile');
+}

@@ -1,0 +1,23 @@
+.main_personalinfo_list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main_personalinfo_list li{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.name, 
+.phonenumber, 
+.name:hover, 
+.phonenumber:hover{
+	color: white;
+	background-color: red;
+	padding: 100px;
+	margin-top: 20px;
+	text-decoration: none;
+}

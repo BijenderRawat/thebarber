@@ -1,33 +1,34 @@
-.main_div{
+.content_main_div{
 	margin: 2% 10% 0% 10%;
-	background-color: #352929;
 }
 
-.sub_div_1, .sub_div_2{
+.content_sub_div_1, .content_sub_div_2{
 	display: flex;
-	justify-content: space-around;
-	background-color: red;
+	justify-content: space-between;
+	background-color: #322424;
 }
 
-.sub_div_1 div, .sub_div_2 div{
+.content_sub_div_1 div, .content_sub_div_2 div{
 	margin-top: 4%;
 	margin-bottom: 4%;
 }
 
-.security_info, .personal_info, .shop_info, .payment_info, .other_info, .other_info_2{
+.security_info, .personal_info, .shop_info, .payment_info{
 	padding: 2% 10% 2% 10%;
+	margin-left: 10rem;
+	margin-right: 10rem;
 	display: flex;
-	justify-content: center;	
+	justify-content: center;
+	align-items: center;
 }
 
 a{
 	text-decoration: none;
 	color: white;
 	border-radius: 25px;
-	padding: 100%;
-  	border-radius: 25px;
+	padding: 50%;
 }
 
 a:hover{
-/*	background-color: red;*/
+	text-decoration: underline;
 }

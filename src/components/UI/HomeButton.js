@@ -1,10 +1,10 @@
 import classes from './HomeButton.module.css'
-import {NavLink} from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const HomeButton = () => {
-	return(
+	return (
 		<NavLink to='/' activeClassName={classes.active}>Home</NavLink>
-		);
+	);
 }
 
 export default HomeButton;

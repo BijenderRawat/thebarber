@@ -4,22 +4,17 @@
   background-color: #38015c;
   display: flex;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-  z-index: 10;
 }
 
 .main_div button{
   color: white;
+  padding: 0;
+  align-items: center;
   background-color: #38015c;
   font-weight: bold;
-  height: 50%;
-  width: 20%;
-  margin-left: 40%;
+  height: 40%;
+  width: 17.7%;
+  margin-left: 41%;
   border: none;
-}
-
-.main_div button:hover{
-  color: black;
-  background-color: white;
-  border-radius: 20px;
+  cursor: pointer;
 }

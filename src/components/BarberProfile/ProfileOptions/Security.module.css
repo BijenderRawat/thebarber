@@ -1,0 +1,22 @@
+.security_list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.security_list li{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.change_password, 
+.delete_account, 
+.change_password:hover, 
+.delete_account:hover{
+	background-color: red;
+	padding: 100px;
+	margin-top: 20px;
+	text-decoration: none;
+}

@@ -1,4 +1,6 @@
-export function getTokenDuration(){
+import { redirect } from 'react-router-dom';
+
+export function getTokenDuration() {
 	const storedExpirationDate = localStorage.getItem('expiration');
 	const expirationDate = new Date(storedExpirationDate);
 	const now = new Date();
@@ -6,18 +8,32 @@ export function getTokenDuration(){
 	return duration;
 }
 
-export function getToken(){
+export function getToken() {
 	const token = localStorage.getItem('token');
-	if(!token){
+	if (!token) {
 		return null;
 	}
 	const tokenDuration = getTokenDuration();
-	if(tokenDuration < 0){
+	if (tokenDuration < 0) {
 		return 'EXPIRED';
 	}
 	return token;
 }
 
-export function checkForToken(){
+export function checkForToken() {
 	return getToken();
+}
+
+export function profileLoader() {
+	const token = getToken();
+	if (token === null) {
+		return redirect('/jointhecommunity/authentication');
+	}
+	return null;
+}
+
+export function removeLocalData() {
+	localStorage.removeItem('token');
+	localStorage.removeItem('expiration');
+	localStorage.removeIten('key');
 }

@@ -1,0 +1,21 @@
+.main_payment_list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.main_payment_list li{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+
+.upi_id,  
+.upi_id:hover{
+	color: white;
+	background-color: red;
+	padding: 100px;
+	margin-top: 20px;
+	text-decoration: none;
+}

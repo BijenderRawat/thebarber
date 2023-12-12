@@ -1,42 +1,34 @@
 import { NavLink } from 'react-router-dom'
 import classes from './BarberProfileContent.module.css'
 
-const BarberPrfileContent = () => {
-  return <div className={classes.main_div}>
-  
-    <div className={classes.sub_div_1}>
+const BarberProfileContent = () => {
+  return <div className={classes.content_main_div}>
 
-    <div className={classes.security_info}>
-    <NavLink to='/jointhecommunity/profile/security' activeClassName={classes.active}>Security</NavLink>
-    </div>
+    <div className={classes.content_sub_div_1}>
 
-    <div className={classes.personal_info}>
-    <NavLink to='/jointhecommunity/profile/personal_info' activeClassName={classes.active}>Profile</NavLink>
-    </div>
-    
-    <div className={classes.shop_info}>
-    <NavLink to='/jointhecommunity/profile/shop' activeClassName={classes.active}>Shop</NavLink>
-    </div>
+      <div className={classes.security_info}>
+        <NavLink to='security'>Security</NavLink>
+      </div>
+
+      <div className={classes.personal_info}>
+        <NavLink to='personal'>Profile</NavLink>
+      </div>
 
     </div>
 
-    <div className={classes.sub_div_2}>
-    
-    <div className={classes.payment_info}>
-    <NavLink to='/jointhecommunity/profile/payments' activeClassName={classes.active}>Payments</NavLink>
-    </div>
+    <div className={classes.content_sub_div_2}>
 
-    <div className={classes.other_info}>
-    <NavLink to='/jointhecommunity/profile/payments' activeClassName={classes.active}>Payments</NavLink>
-    </div>
+      <div className={classes.shop_info}>
+        <NavLink to='shop'>Shop</NavLink>
+      </div>
 
-    <div className={classes.other_info_2}>
-    <NavLink to='/jointhecommunity/profile/payments' activeClassName={classes.active}>Payments</NavLink>
-    </div>
+      <div className={classes.payment_info}>
+        <NavLink to='payment'>Payments</NavLink>
+      </div>
 
     </div>
-    
-    </div>;
+
+  </div>;
 }
 
-export default BarberPrfileContent;
+export default BarberProfileContent;

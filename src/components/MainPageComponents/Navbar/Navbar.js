@@ -1,23 +1,17 @@
-import { Outlet, NavLink } from 'react-router-dom'
-
+import { NavLink } from 'react-router-dom'
 import classes from './Navbar.module.css'
 
 const Navbar = () => {
 
-	return <>
+	return <div className={classes.main_div}>
 
-		<div className={classes.main_div}>
-
-      	<div className={classes.div_logo}>
-		<h1>thebarber.com</h1>
+		<div className={classes.div_logo}>
+			<h1>thebarber.com</h1>
 		</div>
 
 		<NavLink to='jointhecommunity'>Join thebarber community</NavLink>
 
-		</div>
-
-		<Outlet />
-		</>;
+	</div>;
 }
 
 export default Navbar;

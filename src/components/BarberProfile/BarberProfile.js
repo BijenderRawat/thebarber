@@ -2,12 +2,10 @@ import BarberProfileNavbar from './BarberProfileNavbar'
 import BarberProfileContent from './BarberProfileContent'
 
 const BarberProfile = () => {
-	return (
-		<>
+	return <>
 		<BarberProfileNavbar />
 		<BarberProfileContent />
-		</>
-		);
+	</>;
 }
 
 export default BarberProfile;

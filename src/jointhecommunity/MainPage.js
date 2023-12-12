@@ -1,22 +1,18 @@
 import { useEffect } from 'react';
 
-import { useNavigate, Outlet } from 'react-router-dom';
-
-import { checkForToken } from '../Loader/auth';
+import { useNavigate, Outlet, useLoaderData } from 'react-router-dom';
 
 const MainPage = () => {
+	const token = useLoaderData();
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		const token = checkForToken();
-		if(token === null){
-		navigate('authentication');
-	}
-
-	if(token){
-		navigate('profile');
-	}
-	});
+		if (!token || token === null) {
+			navigate('authentication');
+		} else {
+			navigate('profile');
+		}
+	}, [token, navigate]);
 
 	return <Outlet />;
 }
